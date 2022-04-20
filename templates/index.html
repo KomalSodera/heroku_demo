@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+  </head>
+  
+  <body>
+      <!-- with POST method data will be sent back to the server side -->
+      <form action="/" method = "POST">
+        <h1>Fish classifier ML model inputs:</h1>
+        <div class="info">
+    	<input class="fname"  type="text" name="Weight" placeholder="Weight" required="required" />
+        <input class="fname"  type="text" name="Length1" placeholder="Length1" required="required" />
+	<input class="fname"  type="text" name="Length2" placeholder="Length2" required="required" />
+	<input class="fname"  type="text" name="Length3" placeholder="Length3" required="required" />
+	<input class="fname"  type="text" name="Height" placeholder="Height" required="required" />
+	<input class="fname"  type="text" name="Width" placeholder="Width" required="required" />
+        <button type="submit" href="/">Submit</button>
+      </form>
+
+      <br>
+      <br>
+      <h2> Your fish species: {{ output }}</h2>
+
+  </body>
+</html>
